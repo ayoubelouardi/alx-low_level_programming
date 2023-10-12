@@ -2,7 +2,7 @@
 
 /**
 * _islower - Entry point
-* c : is the charachter
+* @c: the charachter 
 * Return: 1 if c is low or 0 elseway
 */
 int _islower(int c)
