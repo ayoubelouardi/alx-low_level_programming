@@ -2,7 +2,7 @@
 
 /**
 * _isalpha - Entry point
-* @c: the charachter 
+* @c: the charachter
 * Return: 1 if c is alpha or 0 elseway
 */
 int _isalpha(int c)
