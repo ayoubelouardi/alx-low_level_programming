@@ -17,6 +17,10 @@ int main(void)
 			{
 				for (yy = 48; yy <= 57; yy++)
 				{
+					if (yy == 48 && y == 48)
+					{
+						continue;
+					}
 					if (x <= y && xx <= yy)
 					{
 					putchar(x);
@@ -30,7 +34,7 @@ int main(void)
 							putchar(' ');
 						}
 					}
-					else
+					else 
 					{
 						continue;
 					}
