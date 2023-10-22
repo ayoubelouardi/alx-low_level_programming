@@ -7,20 +7,33 @@
 */
 int main(void)
 {
-	int i, j, k, l;
+	int x, xx, y, yy;
 
-	for (i = 48; i <= 57; i++)
+	for (x = 48; x <= 57; x++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (xx = 48; xx <= 57; xx++)
 		{
-			if (i < j)
+			for (y = 48; y <= 57; y++)
 			{
-				putchar(i);
-				putchar(j);
-				if (!(i == 56 && j == 57))
+				for (yy = 48; yy <= 57; yy++)
 				{
-					putchar(',');
+					if (x <= y && xx < yy)
+					{
+					putchar(x);
+					putchar(xx);
 					putchar(' ');
+					putchar(y);
+					putchar(yy);
+						if (!(x == 57 && xx == 56 && y == 57 && yy == 57))
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+					else
+					{
+						continue;
+					}
 				}
 			}
 		}
