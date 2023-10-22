@@ -5,38 +5,6 @@
 *
 * Return: Always 0 (Success)
 */
-/***
- * main -- Entry point 
- * variables : int i1, i2 , i3 all of them equale 0.
- * for (i1 <= 9)
- * {
- *	for (i2 <= 9)
- *	{
- *		for (i3 <= 9)
- *		{
- *			if (i1 < i2 && i2 < i3)
- *			{
- *			putchar(i1);
- *			putchar(i2);
- *			putchar(i3);
- *			}
- *			else 
- *			{
- *				continue;
- *			}
- *			if ()
- *			{
- *			putchar(',');
- *			putchar(' ');
- *			}
- *		}
- *		i3 = 0;
- *	}
- *	i2 = 0;
- * }
- * return 0 (Success)
- ***/
-
 
 int main(void)
 {
