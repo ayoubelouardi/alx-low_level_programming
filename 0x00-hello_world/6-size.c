@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - print the size of some data types
+ * Description: print the size of char, int,
+ * long int, long long int and float with
+ * sizeof in bytes.
+ * Return: 0 if success
+ */
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));

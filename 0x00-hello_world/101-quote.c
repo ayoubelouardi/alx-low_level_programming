@@ -1,7 +1,9 @@
 #include <unistd.h>
 
-/* 
- * ssize_t write(int fd, const void buf[.count], size_t count);
+/**
+ * main - print text with write
+ * Description: using write to print the text
+ * Return: 0 if success
  */
 int main(void)
 {
