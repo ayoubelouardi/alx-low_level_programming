@@ -31,7 +31,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		puts(" and  is 0");
+		puts(" and is 0");
 	}
 	else
 	{
