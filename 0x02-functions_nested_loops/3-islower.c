@@ -23,12 +23,12 @@ int main(void)
 
 int _islower(int c)
 {
-	if ( 'a' < c && c < 'z')
+	if ('a' < c && c < 'z')
 	{
-		return 1;
+		return (1);
 	}
-	else 
+	else
 	{
-		return 0;
+		return (0);
 	}
 }
