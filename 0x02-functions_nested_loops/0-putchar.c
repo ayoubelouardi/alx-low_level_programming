@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  * main - Entry point
  * Description: Longer description of the function)?
@@ -14,7 +13,7 @@ int main(void)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		c = str[i];
-		putchar(c);
+		_putchar(c);
 	}
 	return (0);
 }
