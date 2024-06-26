@@ -12,6 +12,10 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_alphabet_x10 - Entry point
+ * Description: Longer description of the function)?
+ */
 void print_alphabet_x10(void)
 {
 	int i = 0;

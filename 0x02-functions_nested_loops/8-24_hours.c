@@ -12,6 +12,10 @@ int main(void)
 	return (0);
 }
 
+/**
+ * jack_bauer - Entry point
+ * Description: Longer description of the function)?
+ */
 void jack_bauer(void)
 {
 	int h1, h2, m1, m2;

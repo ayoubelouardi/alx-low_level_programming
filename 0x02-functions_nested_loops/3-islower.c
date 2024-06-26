@@ -21,6 +21,12 @@ int main(void)
 	return (0);
 }
 
+/**
+ * _islower - Entry point
+ * @c: adsf
+ * Description: Longer description of the function)?
+ * Return: 0 if success
+ */
 int _islower(int c)
 {
 	if ('a' < c && c < 'z')

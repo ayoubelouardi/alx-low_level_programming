@@ -9,21 +9,13 @@
 int main(void)
 {
 	times_table();
-	return 0;
+	return (0);
 }
 
-int how_manny_digit(int num)
-{
-	int i = 1, count = 0;
-
-	while (num / i >= 1)
-	{
-		i *= 10;
-		count++;
-	}
-	return count;
-}
-
+/**
+ * times_table - Entry point
+ * Description: Longer description of the function)?
+ */
 void times_table(void)
 {
 	int i, j, num, x;
@@ -32,25 +24,28 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			num = (i*j);
+			num = i * j;
 			/* spaces printing */
 			if (j != 0)
 			{
-				x = how_manny_digit(num);
-				while (3 - x)
+				x = (num < 10) ? 2 : 1;
+				while (x)
 				{
 					_putchar(' ');
-					x++;
+					x--;
 				}
 			}
 			if (num < 10)
 			{
-				_putchar(num/10+'0');
-				_putchar(num % 10+'0');
+				_putchar(num + '0');
 			}
-			else 
+			else
 			{
-				_putchar(num+'0');
+				if (num / 10 != 0)
+				{
+				_putchar(num / 10 + '0');
+				}
+				_putchar(num % 10 + '0');
 			}
 				_putchar(',');
 		}

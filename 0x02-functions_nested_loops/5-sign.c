@@ -33,6 +33,12 @@ int main(void)
 	return (0);
 }
 
+/**
+ * print_sign - Entry point
+ * @n: asdf
+ * Description: Longer description of the function)?
+ * Return: 0 if success
+ */
 int print_sign(int n)
 {
 	if (n > 0)

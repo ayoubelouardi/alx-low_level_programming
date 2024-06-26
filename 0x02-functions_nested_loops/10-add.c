@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -8,21 +9,21 @@
 
 int main(void)
 {
-	print_alphabet();
+	int n;
+
+	n = add(89, 9);
+	printf("%d\n", n);
 	return (0);
 }
 
 /**
- * print_alphabet - Entry point
+ * add - Entry point
+ * @a: sfd
+ * @b: afd
  * Description: Longer description of the function)?
+ * Return: 0 if success
  */
-void print_alphabet(void)
+int add(int a, int b)
 {
-	int i = 0;
-
-	for (i = 0; i < 26; i++)
-	{
-		_putchar(i + 97);
-	}
-	_putchar('\n');
+	return (a + b);
 }
