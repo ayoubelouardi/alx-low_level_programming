@@ -1,23 +1,26 @@
 #include "main.h"
 
-
-
 /**
- * main - Entry point
+ * n_of_digits - Entry point
+ * @d: dic
  * Description: Longer description of the function)?
  * Return: 0 if success
  */
 
-int main(void)
+int n_of_digits(int d)
 {
-	print_times_table(3);
-	_putchar('\n');
-	print_times_table(5);
-	_putchar('\n');
-	print_times_table(98);
-	_putchar('\n');
-	print_times_table(12);
-	return (0);
+	int i = 1, count = 0;
+
+	if (d == 0)
+	{
+		return (1);
+	}
+	while (d / i >=1)
+	{
+		i *= 10;
+		count++;
+	}
+	return (count);
 }
 
 /**
