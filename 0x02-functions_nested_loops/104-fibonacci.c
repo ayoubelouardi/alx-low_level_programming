@@ -1,50 +1,48 @@
 #include"main.h"
 
 /**
- * n_digits - asdf
- * @d: b
- * Return: d
+ * numLength - sdf
+ * @num: number
+ * Return: number
 */
 
-int n_digits(int d)
+int numLength(int num)
 {
-	int len = 0;
+	int length = 0;
 
-	if (!d)
+	if (!num)
 		return (1);
 
-	while (d)
+	while (num)
 	{
-		d = d / 10;
-		len += 1;
+		num = num / 10;
+		length += 1;
 	}
 
-	return (len);
+	return (length);
 }
 
 /**
  * main - Entry point
- * Description: asdf
+ * Description: safads
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	int c, ini;
-	unsigned long f1 = 1, f2 = 2,
-	sum, mx = 100000000, f1o = 0,
-	f2o = 0, sumo = 0;
+	int count, initial0s;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
 
-	for (c = 1; c <= 98; ++c)
+	for (count = 1; count <= 98; ++count)
 	{
 		if (f1o > 0)
 			printf("%lu", f1o);
-		ini = n_digits(mx) - 1 - n_digits(f1);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
-		while (f1o > 0 && ini > 0)
+		while (f1o > 0 && initial0s > 0)
 		{
 			printf("%d", 0);
-			--ini;
+			--initial0s;
 		}
 
 		printf("%lu", f1);
@@ -56,7 +54,7 @@ int main(void)
 		f2 = sum;
 		f2o = sumo;
 
-		if (c != 98)
+		if (count != 98)
 			printf(", ");
 		else
 			printf("\n");

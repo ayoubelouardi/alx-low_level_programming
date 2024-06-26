@@ -2,24 +2,24 @@
 
 /**
  * main - Entry point
- * Description: adsf
+ * Description: kasdf
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	int sum;
-	unsigned long a = 0, b = 1, sum;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (sum = 0; sum < 50; ++sum)
+	for (count = 0; count < 50; ++count)
 	{
-		sum = a + b;
+		sum = fib1 + fib2;
 		printf("%lu", sum);
 
-		a = b;
-		b = sum;
+		fib1 = fib2;
+		fib2 = sum;
 
-		if (sum == 49)
+		if (count == 49)
 			printf("\n");
 		else
 			printf(", ");

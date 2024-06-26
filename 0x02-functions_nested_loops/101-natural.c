@@ -1,20 +1,21 @@
-#include <stdio.h>
+#include"main.h"
 
-/*
- * main: Entry points
- * Description: Longer description of the function)?
- * Return: 0 if everything good
- */
+/**
+ * main - Entry point
+ * Description: adsf
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	int num = 0, count = 0;
+	int sum, num;
 
 	for (num = 0; num < 1024; ++num)
 	{
 		if ((num % 3 == 0) || (num % 5 == 0))
-			count += num;
+			sum += num;
 	}
-	printf("%d\n", count);
+	printf("%d\n", sum);
+
 	return (0);
 }
