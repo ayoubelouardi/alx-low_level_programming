@@ -1,18 +1,6 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: Longer description of the function)?
- * Return: 0 if success
- */
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
-
-/**
  * print_alphabet_x10 - Entry point
  * Description: Longer description of the function)?
  */

@@ -1,18 +1,6 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: Longer description of the function)?
- * Return: 0 if success
- */
-
-int main(void)
-{
-	times_table();
-	return (0);
-}
-
-/**
  * times_table - Entry point
  * Description: Longer description of the function)?
  */

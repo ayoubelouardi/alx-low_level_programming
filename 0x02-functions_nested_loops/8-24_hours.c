@@ -1,16 +1,5 @@
 #include "main.h"
 
-/**
- * main - Entry point
- * Description: Longer description of the function)?
- * Return: 0 if success
- */
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
 
 /**
  * jack_bauer - Entry point

@@ -1,28 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 
-/**
- * n_of_digits - return the number of digits of x
- * @x: number inptued
- * Description: Longer description of the function)?
- * Return: the digits of x
- */
 
-int n_of_digits(int x)
-{
-	int i = 1,  count = 0;
-
-	if (x == 0)
-	{
-		return (1);
-	}
-	while (x / i >= 1)
-	{
-		count++;
-		i *= 10;
-	}
-	return (count);
-}
 
 /**
  * main - Entry point
