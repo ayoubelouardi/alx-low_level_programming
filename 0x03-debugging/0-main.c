@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/*
+ * main: Entry Points
+ * Description: testing a function
+ */
 int main(void)
 {
 	int n = 0;
