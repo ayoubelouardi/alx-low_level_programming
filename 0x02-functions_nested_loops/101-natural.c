@@ -2,7 +2,8 @@
 
 /*
  * main: Entry points
- * return: 0 if everything good
+ * Description: Longer description of the function)?
+ * Return: 0 if everything good
  */
 
 int main(void)
@@ -13,7 +14,7 @@ int main(void)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-			count+= i;
+			count += i;
 		}
 		i++;
 	}
