@@ -1,69 +1,40 @@
 #include "main.h"
 
 /**
- * n_of_digits - Entry point
- * @d: dic
+ * print_times_table- Entry point
+ * @n: dic
  * Description: Longer description of the function)?
  * Return: 0 if success
  */
 
-int n_of_digits(int d)
+void print_times_table(int n)
 {
-	int i = 1, count = 0;
+	int a, b, c;
 
-	if (d == 0)
+	if (n <= 15 && n >= 0)
 	{
-		return (1);
-	}
-	while (d / i >=1)
-	{
-		i *= 10;
-		count++;
-	}
-	return (count);
-}
-
-/**
- * print_times_table - Entry point
- * @num: number
- * Description: Longer description of the function)?
- */
-
-void print_times_table(int num)
-{
-	int i = 0, j = 0, x = 0, n = 0;
-
-	if (num >= 0 && num >= 15)
-	{
-		for (i = 0; i <= num; i++)
+		for (c = 0; c <= n; ++c)
 		{
-			for (j = 0; j <= num; j++)
+			_putchar(48);
+			for (b = 1; b <= n; ++b)
 			{
-				n = i * j;
-				/*print spaces*/
-				if (j != 0)
-				{
-					for (x = 0;
-			x < 4 - n_of_digits(n); x++)
-					{
+				_putchar(',');
+				_putchar(' ');
+
+				a = c * b;
+
+				if (a <= 9)
 					_putchar(' ');
-					}
-				}
-				/*printing numbers*/
-				x = n_of_digits(n);
-				if (n / 100 != 0)
+				if (a <= 99)
+					_putchar(' ');
+
+				if (a >= 100)
 				{
-					_putchar(n / 100 + '0');
-				}
-				if (n / 10 != 0)
-				{
-					_putchar((n / 10) % 10 + '0');
-				}
-				_putchar(n % 10 + '0');
-				if (!(j == num))
-				{
-					_putchar(',');
-				}
+					_putchar((a / 100) + 48);
+					_putchar((a / 10) % 10 + 48);
+				} else if (a <= 99 && a >= 10)
+					_putchar((a / 10) + 48);
+				_putchar((a % 10) + 48);
 			}
 			_putchar('\n');
 		}

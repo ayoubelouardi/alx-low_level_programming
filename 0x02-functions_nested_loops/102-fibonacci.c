@@ -1,35 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include"main.h"
 
-/*
- * fibo: Entry points
- * @n: asdf
- * return: 0 if everything good
- */
-uint64_t (int n)
-{
-	int a = 0, b = 1, c, i;
-	if (n == 0)
-		return (a);
-	for (i = 2; i <= n; i++) {
-		c = a + b;
-		a = b;
-		b = c;
-	}
-	return (b);
-}
-
-/*
- * main: Entry points
- * return: 0 if everything good
- */
+/**
+ * main - Entry point
+ * Description: adsf
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	int i = 0;
-	for (i = 1; i <= 50; i++)
+	int sum;
+	unsigned long a = 0, b = 1, sum;
+
+	for (sum = 0; sum < 50; ++sum)
 	{
-		printf("%d, ", fibo(i));
+		sum = a + b;
+		printf("%lu", sum);
+
+		a = b;
+		b = sum;
+
+		if (sum == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
+
 	return (0);
 }

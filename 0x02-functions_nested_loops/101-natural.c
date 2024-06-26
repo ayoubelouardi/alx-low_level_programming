@@ -8,15 +8,12 @@
 
 int main(void)
 {
-	int i = 0, count = 0;
+	int num = 0, count = 0;
 
-	while (i < 1024)
+	for (num = 0; num < 1024; ++num)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-		{
-			count += i;
-		}
-		i++;
+		if ((num % 3 == 0) || (num % 5 == 0))
+			count += num;
 	}
 	printf("%d\n", count);
 	return (0);
