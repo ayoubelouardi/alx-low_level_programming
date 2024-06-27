@@ -1,15 +1,15 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - Short description, single line
- * Description: Longer description of the function)?
- * Return: 0 if good
- */
+* main - tests function 
+* Return: 0
+*/
 
 int main(void)
 {
-	int i = 0;
+	int i;
 
+	i = 98 % 2;
 	positive_or_negative(i);
 
 	return (0);
