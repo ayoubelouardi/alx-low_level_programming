@@ -1,15 +1,19 @@
 /**
- * _strlen - returns the length of a string
- * @s: string parameter input
- * Return: length of string
-*/
+ * _strlen - return string length
+ * @_strlen: string
+ * Description: function that returns the length of a string.
+ * Return: returns the number of bytes in the string
+ */
 
-int _strlen(char *s) 
+int _strlen(char *s)
 {
-        int counter;
+	int i = 0, counter = 0;
+	
+	while (*(s + i) != '\0')
+	{
+		counter++;
+		i++;
+	}
 
-        for (counter = 0; *s != '\0'; ++s)
-                ++counter;
-
-        return (counter);
+	return (counter);
 }

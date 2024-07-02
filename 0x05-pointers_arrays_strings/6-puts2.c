@@ -1,17 +1,22 @@
-#include"main.h"
+#include "main.h"
+
 /**
- * puts2 - prints every character of a string
- * @str: string parameter input
-*/
+ * puts2 - print string
+ * @str: string
+ * Description: function that prints a string,
+ * followed by a new line, to stdout.
+ */
 
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
+	char c;
 
-	for (i = 0; str[i] != '\0'; ++i)
+	for (i = 0; i <= (int)sizeof(str); i++)
 	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
+		c = *(str + i);
+		_putchar(c);
+		i++;
 	}
 	_putchar('\n');
 }
