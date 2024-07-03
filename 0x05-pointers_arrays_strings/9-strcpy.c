@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#include "mian.h"
+#include "2-strlen.c"
 /**
  * _strcpy - copy string
  * @dest: buffer pointed to by dest.
