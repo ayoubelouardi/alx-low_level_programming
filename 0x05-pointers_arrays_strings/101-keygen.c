@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - crack the passwordk
@@ -7,12 +9,18 @@
 
 int main(void)
 {
-	char *ss = "asdfasdfaadfssdfasdfsdaaaac\0";
-	int i = 0;
+	int i = 0, j = 0;
+	char ss[3][35] = {
+		"asdfasdfaadfssdfasdfsdaaaac\0",
+		"zzzzzzzzzzzzzzzzzzzzzaq\0",
+		"zzzzzzzzzzzzzzEEzzzzzaqj\0"
+	};
+	srand(time(NULL));
+	j = rand() % 3;
 
-	while (ss[i] != '\0')
+	while (ss[j][i] != '\0')
 	{
-		putchar(ss[i]);
+		putchar(ss[j][i]);
 		i++;
 	}
 	return (0);
