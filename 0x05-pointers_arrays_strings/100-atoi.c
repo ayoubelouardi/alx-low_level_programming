@@ -12,7 +12,7 @@ int _atoi(char *s)
 {
 	int x = 0, len = 0, i = 0;
 	int sign = 0;
-	long n = 0;
+	int n = 0;
 
 	/* calculating the len */
 	while (s[i] != '\0')
