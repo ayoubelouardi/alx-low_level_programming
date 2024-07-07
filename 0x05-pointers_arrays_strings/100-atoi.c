@@ -7,28 +7,37 @@
  * Return: Number
  */
 
-/**
- * Problems:
- * signes
- * ouverflow
- */
-
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int n = 0, x;
-	int len = sizeof(s);
+	int x = 0, len = 0, i = 0;
+	int sign = 0;
+	long n = 0;
 
-	while (i < len)
+	/* calculating the len */
+	while (s[i] != '\0')
 	{
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			x = s[i] - '0';
-			n = n * 10 + x;
-		}
+		len++;
 		i++;
 	}
+	/* calculate the number */
+	for (i = 0; i < len && s[i] != ';'; i++)
+	{
+		x = s[i];
+		if ('0' <= x && x <= '9')
+		{
+			x = x - '0';
+			n = n * 10 + x;
+		}
+		else if (x == '-')
+		{
+			sign--;
+		}
+		else if (x == '+')
+		{
+			sign++;
+		}
+	}
 
-	return (n);
+	return (sign < 0 ? n * -1 : n);
 }
