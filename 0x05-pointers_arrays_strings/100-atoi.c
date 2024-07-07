@@ -29,11 +29,11 @@ int _atoi(char *s)
 			x = x - '0';
 			n = n * 10 + x;
 		}
-		else if (x == '-')
+		if (x == '-')
 		{
 			sign--;
 		}
-		else if (x == '+')
+		if (x == '+')
 		{
 			sign++;
 		}
