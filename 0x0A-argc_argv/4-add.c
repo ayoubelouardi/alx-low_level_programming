@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		}
 		i++;
 	}
-	printf("%ld\n", r);
+	printf("%d\n", r);
 
 	return (0);
 }
