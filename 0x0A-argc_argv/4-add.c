@@ -11,12 +11,12 @@
 int main(int argc, char *argv[])
 {
 	int i = 1;
-	long int r = 0;
+	int r = 0;
 	char *ptr = '\0';
 
 	while (i < argc)
 	{
-		r += strtol(argv[i], &ptr, 10);
+		r += (int) strtol(argv[i], &ptr, 10);
 		if (*ptr != '\0')
 		{
 			puts("Error");
