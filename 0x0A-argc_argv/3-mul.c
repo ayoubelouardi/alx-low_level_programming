@@ -4,15 +4,15 @@
 /**
  * main - multiplayer
  * @argc: args n
- * @argb: args values
+ * @argv: args values
  * Return: 0 if success, 1 otherwise
  */
 
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	long int r;
 
-	if (agrc != 3)
+	if (argc != 3)
 	{
 		puts("Error");
 		return (1);

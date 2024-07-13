@@ -4,7 +4,7 @@
 /**
  * main - adder
  * @argc: args n
- * @argb: args values
+ * @argv: args values
  * Return: 0 if success, 1 otherwise
  */
 
