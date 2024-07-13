@@ -12,11 +12,6 @@ int main(int argc, char *argv[])
 {
 	unsigned int cents, i = 0;
 
-	/* if the number of arguments
-	 * passed to your program is
-	 * not exactly 1, print Error,
-	 * followed by a new line, and
-	 * return 1 */
 	if (argc != 2)
 	{
 		puts("Error");
