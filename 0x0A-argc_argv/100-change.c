@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int cents, i = 0;
-	
+
 	if (argc != 2)
 	{
 		puts("Error");
@@ -19,34 +19,19 @@ int main(int argc, char *argv[])
 	}
 
 	cents = atoi(argv[1]);
-
 	while (cents)
 	{
 		if (cents % 25 == 0)
-		{
 			cents -= 25;
-			i++;
-		}
 		else if (cents % 10 == 0)
-		{
 			cents -= 10;
-			i++;
-		}
 		else if (cents % 5 == 0)
-		{
 			cents -= 5;
-			i++;
-		}
 		else if (cents % 2 == 0)
-		{
 			cents -= 2;
-			i++;
-		}
 		else
-		{
 			cents -= 1;
-			i++;
-		}
+		i++;
 	}
 
 	printf("%d\n", i);
