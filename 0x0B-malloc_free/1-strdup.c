@@ -4,7 +4,7 @@
  * _strdup - copy strin to a new place on memory
  * @str: string
  * Description:
- * 	function that returns a pointer to a newly allocated
+ *	function that returns a pointer to a newly allocated
  * space in memory, which contains a copy of the string given
  * as a parameter.
  *	The _strdup() function returns a pointer to a new
@@ -16,7 +16,6 @@
  *    NULL
  * - if str = NULL
  * - if insufficient memory was available
- *  
  * pointer to the duplicated string otherwise.
  */
 
@@ -31,12 +30,12 @@ char *_strdup(char *str)
 	while (str[i++] != '\0')
 		size++;
 
-	ptr = (char *) malloc(sizeof(char) * size);
+	ptr = (char *) malloc(sizeof(char) * size + 1);
 
 	if (size == 0 || ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++) 
+	for (i = 0; i < size; i++)
 		ptr[i] = str[i];
 	ptr[++i] = '\0';
 
