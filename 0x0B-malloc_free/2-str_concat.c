@@ -20,13 +20,8 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 
 	/* if s1 / s2 is NULL return NULL */
-	if (s1 == NULL && s2 != NULL)
+	if (s1 == NULL || s2 != NULL)
 		return (s1);
-	else if (s2 == NULL && s1 != NULL)
-		return (s2);
-	else
-		return (NULL);
-		
 
 	/* calcul the size of s1 and s2 */
 	while (s1[i++] != '\0')
