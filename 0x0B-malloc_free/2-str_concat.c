@@ -2,8 +2,8 @@
 
 /**
  * str_concat - function that concatenates two strings.
- * @s1:
- * @s2: Description of parameter x
+ * @s1: string 1
+ * @s2: string 2
  * Description: Longer description of the function)?
  * The returned pointer should point to a newly allocated
  * space in memory which contains the contents of s1,
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		size_2++;
 
 	/* allocate the size of booth s1 ++ s2 + 1 */
-	ptr = (char*) malloc(sizeof(char) * (size_1 + size_2 + 1));
+	ptr = (char *) malloc(sizeof(char) * (size_1 + size_2 + 1));
 	/* if error return NULL */
 	if (ptr == NULL)
 		return (NULL);
