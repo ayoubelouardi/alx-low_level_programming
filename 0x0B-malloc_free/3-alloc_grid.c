@@ -16,6 +16,8 @@ int **alloc_grid(int c, int r)
 
 	len = sizeof(int *) * r + sizeof(int) * c * r;
 	arr = (int **)malloc(len);
+	if (arr == NULL)
+		return (NULL);
 
 	/**
 	 * ptr is now pointing to the first element of the 2D
@@ -26,7 +28,6 @@ int **alloc_grid(int c, int r)
 
 	if (c == 0 || r == 0)
 		return (0);
-
 	/**
 	 * for loop to point rows pointer to appropriate
 	 * location in 2D array
