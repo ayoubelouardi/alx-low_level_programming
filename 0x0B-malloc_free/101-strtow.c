@@ -10,6 +10,7 @@
 int wordcount(char *str)
 {
 	int words = 0;
+
 	while (*str != '\0')
 	{
 		if (*str == ' ')
