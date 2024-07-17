@@ -20,8 +20,12 @@ char *str_concat(char *s1, char *s2)
 	char *ptr;
 
 	/* if s1 / s2 is NULL return NULL */
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	if (s1 == NULL && s2 != NULL)
+		return (s2);
+	else if (s1 == NULL && s2 != NULL)
+		return (s1);
+	else if (s1 == NULL && s2 == NULL)
+		return ("");
 
 	/* calcul the size of s1 and s2 */
 	while (s1[i++] != '\0')
@@ -30,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[i++] != '\0')
 		size_2++;
 
-	/* allocate the size of booth s1 ++ s2 + 1 */
+	/* allocate the size of booth s1 + s2 + 1 */
 	ptr = (char *) malloc(sizeof(char) * (size_1 + size_2 + 1));
 	/* if error return NULL */
 	if (ptr == NULL)
