@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	else if (s1 == NULL && s2 != NULL)
 		return (s1);
 	else if (s1 == NULL && s2 == NULL)
-		return ("");
+		return (&(""));
 
 	/* calcul the size of s1 and s2 */
 	while (s1[i++] != '\0')
