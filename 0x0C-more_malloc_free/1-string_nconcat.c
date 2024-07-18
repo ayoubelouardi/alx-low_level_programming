@@ -52,6 +52,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* allocate memory */
 
 	ptr = (char *) malloc_checked(sizeof(char) * (lent_1 + lent_2 + 1));
+	if (ptr == NULL)
+		return (NULL):
 
 	/* copy to memory */
 	for (i = 0; i < lent_1; i++)

@@ -29,9 +29,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+
 	ptr = (char *) malloc_checked(nmemb * size);
 
-	for (i = 0; i < (size_t) size; i++)
+	if (ptr == NULL)
+		return (NULL):
+
+	for (i = 0; i < (size_t) size * nmemb; i++)
 		ptr[i] = 0;
 
 	return (ptr);
