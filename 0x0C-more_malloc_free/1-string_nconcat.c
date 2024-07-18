@@ -65,20 +65,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 /**
  * len - return string length witouth calcul of \0
- * @str: string
+ * @s: string
  * Description: return the len of str
  * Return: str len
  */
 
 unsigned int len(char *s)
 {
-        int i = 0, counter = 0;
+	int i = 0, counter = 0;
 
-        while (*(s + i) != '\0')
-        {
-                counter++;
-                i++;
-        }
+	while (*(s + i) != '\0')
+	{
+		counter++;
+		i++;
+	}
 
-        return (counter);
+	return (counter);
 }

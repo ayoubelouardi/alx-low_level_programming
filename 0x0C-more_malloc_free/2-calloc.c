@@ -14,7 +14,7 @@
  * to the allocated memory.
  *
  * The memory is set to zero
- * 
+ *
  * Return:
  * If nmemb or size is 0, then _calloc returns NULL
  * If malloc fails, then _calloc returns NULL

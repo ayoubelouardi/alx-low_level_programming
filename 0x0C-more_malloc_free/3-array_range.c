@@ -8,11 +8,9 @@
  * Description:
  *
  * function that creates an array of integers.
- * 
+ *
  * The array created should contain all the values from min
  * (included) to max (included), ordered from min to max
- *
- * Return: 0 if success
  *
  * Return: the pointer to the newly created array
  * If min > max, return NULL
