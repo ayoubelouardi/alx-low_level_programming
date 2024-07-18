@@ -27,60 +27,35 @@ unsigned int len(char *str);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int lent_1 = 0, lent_2 = 0, i = 0, j = 0;
-	char *ptr;
+	char *s;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	/* set len_1 */
-	if (s1 == NULL)
-		lent_1 = 0;
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
+
+	if (n < len2)
+		s = malloc(sizeof(char) * (len1 + n + 1));
 	else
-		lent_1 = len(s1);
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
 
-	/* set len_2 */
-	if (s2 == NULL)
+	if (!s)
+		return (NULL);
+
+	while (i < len1)
 	{
-		lent_2 = 0;
-	}
-	else
-	{
-		if (n >= len(s2))
-			lent_2 = n;
-		else
-			lent_2 = n;
-	}
-
-	/* allocate memory */
-
-	ptr = (char *) malloc_checked(sizeof(char) * (lent_1 + lent_2 + 1));
-	if (ptr == NULL)
-		return (NULL):
-
-	/* copy to memory */
-	for (i = 0; i < lent_1; i++)
-		ptr[j++] = s1[i];
-	for (i = 0; i < lent_2; i++)
-		ptr[j++] = s2[i];
-	ptr[j + 1] = '\0';
-
-	return (ptr);
-}
-
-/**
- * len - return string length witouth calcul of \0
- * @s: string
- * Description: return the len of str
- * Return: str len
- */
-
-unsigned int len(char *s)
-{
-	int i = 0, counter = 0;
-
-	while (*(s + i) != '\0')
-	{
-		counter++;
+		s[i] = s1[i];
 		i++;
 	}
 
-	return (counter);
+	while (n < len2 && i < (len1 + n))
+		s[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
+		s[i++] = s2[j++];
+
+	s[i] = '\0';
+
+	return (s);
 }
