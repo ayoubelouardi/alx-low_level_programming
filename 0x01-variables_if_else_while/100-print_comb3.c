@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * @parameterx: Description of parameter x
- * Description: Longer description of the function)?
- * Return: 0 if success
+ * main - print a beautiful design
+ * Description:
+ * Write a program that prints all possible different
+ * combinations of two digits.
+ * Return: 0 Always.
  */
 
 int main(void)
