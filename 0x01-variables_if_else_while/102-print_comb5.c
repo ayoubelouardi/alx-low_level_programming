@@ -24,13 +24,19 @@ int main(void)
 				{
 					printf("0%d", x);
 				}
-				printf("%d", x);
+				else
+				{
+					printf("%d", x);
+				}
 				printf(" ");
 				if (y < 10)
 				{
 					printf("0%d", y);
 				}
-				printf("%d", y);
+				else
+				{
+					printf("%d", y);
+				}
 				if (x == 8 && y == 9)
 					continue;
 				else
