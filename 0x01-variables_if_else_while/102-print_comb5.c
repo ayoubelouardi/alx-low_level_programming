@@ -37,7 +37,7 @@ int main(void)
 				{
 					printf("%d", y);
 				}
-				if (x == 8 && y == 9)
+				if (x == 98 && y == 99)
 					continue;
 				else
 					printf(", ");
