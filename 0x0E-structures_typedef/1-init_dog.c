@@ -1,16 +1,12 @@
 #include <stdlib.h>
 #include "dog.h"
 
-
-
-
 /**
- * _strlen - returns the length of a string
- *
- * @s: string parameter input
- *
+ * _strcpy - returns the length of a string
+ * @src: string parameter input
+ * @dest: string parameter input
  * Return: length of string
-*/
+ */
 
 char *_strcpy(char *dest, char *src)
 {
@@ -28,11 +24,9 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * _strlen - returns the length of a string
- *
  * @s: string parameter input
- *
  * Return: length of string
-*/
+ */
 
 int _strlen(char *s)
 {
@@ -60,7 +54,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	if (d->name == NULL || d->owner == NULL)
 		exit(1);
-	
+
 	d->name = _strcpy(d->name, name);
 	d->owner = _strcpy(d->owner, owner);
 
