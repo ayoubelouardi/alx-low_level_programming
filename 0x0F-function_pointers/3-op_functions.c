@@ -1,68 +1,53 @@
 /**
- * op_add - adds @a and @b
- *
- * @a: input 1
- * @b: input 2
- *
- * Return: sum of @a and @b
-*/
-
+ * op_add - add two numbers
+ * @a: first number
+ * @b: second number
+ * Return: the result
+ */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
-
 /**
- * op_sub - gets the difference of @a and @b
- *
- * @a: input 1
- * @b: input 2
- *
- * Return: difference of @a and @b
-*/
+ * op_sub- sub wo numbers
+ * @a: first number
+ * @b: second number
+ * Return: the result
+ */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
-
 /**
- * op_mul - multiplies @a and @b
- *
- * @a: input 1
- * @b: input 2
- *
- * Return: product of @a and @b
-*/
+ * op_mul- mul two numbers
+ * @a: first number
+ * @b: second number
+ * Return: the result
+ */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
-
 /**
- * op_div - divides @a by @b
- *
- * @a: input 1
- * @b: input 2
- *
- * Return: results of the division @a and @b
-*/
+ * op_div - div two numbers
+ * @a: first number
+ * @b: second number
+ * Return: the result
+ */
 int op_div(int a, int b)
 {
 	return (a / b);
 }
 
-
 /**
- * op_mod - gets the reminder of the division between @a and @b
- *
- * @a: input 1
- * @b: input 2
- *
- * Return: the remainder
-*/
+ * op_mod - mod two numbers
+ * @a: first number
+ * @b: second number
+ * Return: the result
+ */
 int op_mod(int a, int b)
 {
 	return (a % b);
