@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -11,11 +10,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t n = 0;
+	const dlistint_t *node = h;
 
-	while (h->next != NULL)
+	while (node)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d\n", node->n);
+		node = node->next;
 		n++;
 	}
 	return (n);
