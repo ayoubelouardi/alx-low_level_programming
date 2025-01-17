@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <string.h>
 
 /**
  * main - Write a C program that prints a specific quote to standard error
@@ -10,9 +9,8 @@
 int main(void)
 {
 	char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	size_t size = strlen(quote);
 
-	write(2, quote, size);
+	write(2, quote, 60);
 
 	return (1);
 }
