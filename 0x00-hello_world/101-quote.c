@@ -2,7 +2,8 @@
 #include <string.h>
 
 /**
- * main - Write a C program that prints a specific quote to standard error without using printf or puts.
+ * main - Write a C program that prints a specific quote to standard error
+ * without using printf or puts.
  *
  * Return: Always 1 (Success)
  */
