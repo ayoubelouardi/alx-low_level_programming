@@ -1,41 +1,37 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
- * main - print the value of the last digit of n
- * Description:
- * The output of the program should be:
- * The string Last digit of, followed by n,
- * followed by the string is, followed by
- * if the last digit of n is greater than 5:
- * the string and is greater than 5
- * if the last digit of n is 0: the string and is 0
- * if the last digit of n is less than 6 and not 0:
- * the string and is less than 6 and not 0
- * followed by a new line
- * Return: 0 if success
+ * main - Print the last digit of a randomly generated number and classify it
+ * based on its value.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n;
+	int n, last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	printf("Last digit of %d", n);
-	n = n % 10;
-	printf(" is %d", n);
-	if (n > 5)
+
+	last_digit = n % 10;
+
+	printf("Last digit of %d is %d ", n, last_digit);
+
+	if (last_digit > 5)
 	{
-		puts(" and is greater than 5");
+		puts("and is greater than 5");
 	}
-	else if (n == 0)
+	else if (last_digit == 0)
 	{
-		puts(" and is 0");
+		puts("and is 0");
 	}
 	else
 	{
-		puts(" and is less than 6 and not 0");
+		puts("and is less than 6 and not 0");
 	}
+
+
 	return (0);
 }

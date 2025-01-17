@@ -1,12 +1,12 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /**
- * main - print the value of n
- * Description: print if the number is greater than 0: is positive
- * if the number is 0: is zero
- * if the number is less than 0: is negative
- * Return: 0 if success
+ * main - Print whether a randomly generated number is positive, negative, or
+ * zero.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -26,5 +26,6 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
+
 	return (0);
 }
