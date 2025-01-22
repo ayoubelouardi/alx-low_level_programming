@@ -17,13 +17,23 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
+					/* a != b */
 					if ((i == k && j == l))
 						continue;
+
+					/* a < b */
 					if (!(i <= k && j < l))
 						continue;
-					if (!(i > j || k > l))
+
+
+					/* format: ij kl 
+					if (i > j)
+						continue;
+					if (k > l)
 						continue;
 
+
+					*/
 					putchar(i + '0');
 					putchar(j + '0');
 
@@ -32,8 +42,8 @@ int main(void)
 					putchar(k + '0');
 					putchar(l + '0');
 
-					if (!(i == 9 && j == 8 &&
-						k == 9 && l == 9))
+					if (!((i == 9) && (j == 8) 
+					&& (k == 9) && (l == 9)))
 					{
 						putchar(',');
 						putchar(' ');
