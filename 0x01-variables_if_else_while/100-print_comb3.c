@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - To print all possible unique combinations of three digits in
+ * main - To print all possible unique combinations of two digits in
  * ascending order, separated by commas and spaces.
  *
  * Return: Always 0 (Success)
