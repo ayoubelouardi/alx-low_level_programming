@@ -22,7 +22,7 @@ int main(void)
 
 				/* same size */
 				if ((a == b) || (b == c) || (c == a))
-					continue; 
+					continue;
 				/* right order */
 				if (!(a < b && b < c))
 					continue;
