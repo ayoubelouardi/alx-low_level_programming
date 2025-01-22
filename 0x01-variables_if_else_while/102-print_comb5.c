@@ -17,22 +17,8 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					/* a != b */
-					if ((i == k && j == l))
-						continue;
-
-					/* a < b */
-					if (!(i <= k && j < l))
-						continue;
-
-
-					/* format: ij kl 
-					if (i > j)
-						continue;
-					if (k > l)
-						continue;
-
-
+					/*
+						add here the conditions
 					*/
 					putchar(i + '0');
 					putchar(j + '0');
