@@ -20,21 +20,22 @@ int main(void)
 				b = j + i;
 				c = k + i;
 
-				/* should not be the same */
-				if (a != b && b != c && c != a)
-				{
-					putchar(a + 48);
-					putchar(b + 48);
-					putchar(c + 48);
+				/* same size */
+				if ((a == b) || (b == c) || (c == a))
+					continue; 
+				/* right order */
+				if (!(a < b && b < c))
+					continue;
 
-					if ((a == 7 && b == 8 && c == 9))
-					{
-						break;
-					}
+				putchar(a + 48);
+				putchar(b + 48);
+				putchar(c + 48);
 
-					putchar(',');
-					putchar(' ');
-				}
+				if ((a == 7 && b == 8 && c == 9))
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
