@@ -4,13 +4,6 @@
 /* allowed functions */
 int _putchar(char c);
 
-/* my function */
-int pow_10(int i);
-void print_last(int n);
-int len_of_number(int n);
-void print_pnumber(int n);
-void print_number(int n);
-
 /* my functions */
 void print_alphabet(void);
 void print_alphabet_x10(void);

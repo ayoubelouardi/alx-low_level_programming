@@ -1,5 +1,11 @@
 #include "main.h"
 
+int pow_10(int i);
+void print_last(int n);
+int len_of_number(int n);
+void print_pnumber(int n);
+void print_number(int n);
+
 /**
  * print_to_98 - prints all natural numbers from n to 98, followed by a new
  * line.
