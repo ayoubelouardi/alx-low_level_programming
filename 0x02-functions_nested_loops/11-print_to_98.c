@@ -48,19 +48,9 @@ int pow_10(int i)
 
 
 /**
- * print_last - print the ', ' after the number
+ * len_of_number - return the len of numbers.
  * @n: number
- */
-void print_last(int n)
-{
-	if (n != 98)
-	{
-		_putchar(',');
-		_putchar(' ');
-	}
-}
-
-/**
+ * Return: The number of digits in a @n.
  */
 int len_of_number(int n)
 {
@@ -109,12 +99,19 @@ void print_number(int n)
 	{
 		_putchar('-');
 		print_pnumber(-n);
-		print_last(n);
+		goto print_last;
 	}
 	else
 	{
 		print_pnumber(n);
-		print_last(n);
+		goto print_last;
+	}
+
+print_last:
+	if (n != 98)
+	{
+		_putchar(',');
+		_putchar(' ');
 	}
 }
 
