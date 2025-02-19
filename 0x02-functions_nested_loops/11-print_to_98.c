@@ -93,7 +93,6 @@ void print_pnumber(int n)
 		_putchar('0' + digit);
 	}
 
-	print_last(n);
 }
 
 /**
@@ -108,10 +107,12 @@ void print_number(int n)
 	{
 		_putchar('-');
 		print_pnumber(-n);
+		print_last(n);
 	}
 	else
 	{
 		print_pnumber(n);
+		print_last(n);
 	}
 }
 
