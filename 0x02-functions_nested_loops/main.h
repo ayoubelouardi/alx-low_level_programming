@@ -11,8 +11,6 @@ int len_of_number(int n);
 void print_pnumber(int n);
 void print_number(int n);
 
-#include "additional_function.c"
-
 /* my functions */
 void print_alphabet(void);
 void print_alphabet_x10(void);
