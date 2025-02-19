@@ -87,7 +87,7 @@ void print_pnumber(int n)
 
 
 	digit = n;
-	for (i = len -1 ; i >= 0; i--)
+	for (i = len - 1 ; i >= 0; i--)
 	{
 		digit = ((int) ((double) n / (double) pow_10(i)) % 10);
 		_putchar('0' + digit);
