@@ -4,6 +4,14 @@
 /* allowed functions */
 int _putchar(char c);
 
+/* my function */
+void print_last(int n);
+int pow_10(int i);
+void print_pnumber(int n);
+void print_number(int n);
+
+#include "additional_function.c"
+
 /* my functions */
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -16,6 +24,13 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
+
+/* advance */
+void print_times_table(int n);
+
+
+
+
 
 
 #endif
