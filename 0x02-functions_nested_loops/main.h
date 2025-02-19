@@ -5,8 +5,9 @@
 int _putchar(char c);
 
 /* my function */
-void print_last(int n);
 int pow_10(int i);
+void print_last(int n);
+int len_of_number(int n);
 void print_pnumber(int n);
 void print_number(int n);
 

@@ -33,6 +33,22 @@ void print_last(int n)
 }
 
 /**
+ */
+int len_of_number(int n)
+{
+	int len = 1, d;
+
+	d = (double) n;
+	while (d / 10.00 >= 1.00)
+	{
+		len++;
+		d = d / 10.00;
+	}
+
+	return (len);
+}
+
+/**
  * print_pnumber - print a positive number.
  * @n: positive number
  */
@@ -41,15 +57,8 @@ void print_pnumber(int n)
 	int i, len;
 	double digit;
 
-	len = 1;
-	digit = (double) n;
-
 	/* find number len */
-	while (digit / 10.00 >= 1.00)
-	{
-		len++;
-		digit = digit / 10.00;
-	}
+	len = len_of_number((double) n);
 
 
 	digit = n;
@@ -66,7 +75,6 @@ void print_pnumber(int n)
  *
  * @n: the number to print
  */
-
 void print_number(int n)
 {
 	if (n < 0)
