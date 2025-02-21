@@ -1,7 +1,7 @@
 #include "main.h"
 
 int pow_10(int i);
-void print_last(int n, int x)
+void print_last(int n, int x);
 int len_of_number(int n);
 void print_number(int n);
 
@@ -15,14 +15,17 @@ void print_times_table(int n)
 {
 	int i, j;
 
+	if (15 < n || n < 0)
+		return;
+
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			print_number(n);
-			print_last(n, j);
+			print_last(i * j, j);
+			print_number(i * j);
 		}
-		_putchar('\0');
+		_putchar('\n');
 	}
 }
 
@@ -58,7 +61,7 @@ void print_last(int n, int x)
 
 	len = len_of_number(n);
 
-	if (x != n)
+	if (x != 0)
 	{
 		_putchar(',');
 		for (i = 0; i < 4 - len; i++)
