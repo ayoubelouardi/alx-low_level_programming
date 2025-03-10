@@ -1,11 +1,10 @@
-#include"main.h"
+#include "main.h"
 
 /**
-* main - tests function
-* Description: test
-* Return: 0
-*/
-
+ * main - testing a fucntion
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i = 0;

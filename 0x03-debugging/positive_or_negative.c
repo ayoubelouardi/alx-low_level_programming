@@ -1,25 +1,25 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * positive_or_negative - Entry point
+ * positive_or_negative - positive of negative.
+ *
  * @i: number
- * Description: print value of n satus;
- * zero, positive or negative
+ *
+ * Return: print the sign of @i.
  */
 
-void positive_or_negative(int i)
+void positive_or_negative(int n)
 {
-	/* my if statement */
-	if (i == 0)
+	if (n > 0)
 	{
-		printf("%d is zero\n", i);
+		printf("%d is positive\n", n);
 	}
-	else if (i > 0)
+	else if (n < 0)
 	{
-		printf("%d is positive\n", i);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
-		printf("%d is negative\n", i);
+		printf("%d is zero\n", n);
 	}
 }
