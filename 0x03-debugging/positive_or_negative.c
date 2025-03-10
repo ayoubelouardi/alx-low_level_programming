@@ -3,9 +3,9 @@
 /**
  * positive_or_negative - positive of negative.
  *
- * @i: number
+ * @n: number
  *
- * Return: print the sign of @i.
+ * Return: print the sign of @n.
  */
 
 void positive_or_negative(int n)
