@@ -1,23 +1,17 @@
-#include"main.h"
+#include "main.h"
 
 /**
- * print_most_numbers - print 0 - 9 apart
- * from 2 and 4 and you can
- * only use _putchar twice
- * Return: Always 0 (Success)
-*/
-
+ * print_most_numbers - Print numbers from 0 to 9, excluding 2 and 4.
+ *
+ */
 void print_most_numbers(void)
 {
-	int n = 0;
+	int i;
 
-	while (n < 10)
+	for (i = 0; i < 10; i++)
 	{
-		if ((n > 5) || (n % 2 != 0 || n == 0))
-		{
-			_putchar(n + '0');
-		}
-		n++;
+		if (i == 2 || i == 4)
+			continue;
+		_putchar('0' + i);
 	}
-	_putchar('\n');
 }
