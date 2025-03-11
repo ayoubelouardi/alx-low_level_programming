@@ -3,6 +3,10 @@
 /**
  * _isupper - Check for uppercase character
  *
+ * Description: function that checks for uppercase characters.
+ *
+ * @c: char
+ *
  * Return:
  * 1 - uppercase
  * 0 - otherwise
