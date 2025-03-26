@@ -1,43 +1,68 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _atoi - from string into number
- * @s: number as a string
- * Description: function that convert a string to an integer.
- * Return: Number
+ * pow_f- power function
+ * @n: power sign.
+ * @x: number.
+ *
+ * Return: result.
  */
 
+long pow_f(int n, int x);
 
+/**
+ * _atoi - Converts a string to an integer
+ * @s: Pointer to the string
+ *
+ * Return: Converted integer value
+ */
 int _atoi(char *s)
 {
-	int x = 0, len = 0, i = 0;
-	int sign = 0;
-	unsigned int n = 0;
+	int i = 0, j = 0, p = 0;
+	long number = 0, n = 0;
+	char c;
 
-	/* calculating the len */
-	while (s[i] != '\0')
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		len++;
-		i++;
-	}
-	/* calculate the number */
-	for (i = 0; i < len && s[i] != ';'; i++)
-	{
-		x = s[i];
-		if ('0' <= x && x <= '9')
+		c = *(s + i);
+
+		if (c == '-')
 		{
-			x = x - '0';
-			n = n * 10 + x;
+			p--;
 		}
-		if (x == '-')
+		else if (c == '+')
 		{
-			sign--;
+			p++;
 		}
-		if (x == '+')
+		else if ('0' <= c && c >= '9')
 		{
-			sign++;
+			/* calculate the number */
+			for (j = 0; (*(s + i + j) >= '0' && *(s + i + j) <= 'z'); j++)
+			{
+				n = *(s + i + j) - '0';
+				number = number * pow_f(j, 10) + n;
+			}
+
+			/* sign */
+			if (p < 0)
+				number = number * -1;
+
+			return (number);
 		}
 	}
 
-	return (sign < 0 ? n * -1 : n);
+	return (0);
+}
+
+long pow_f(int n, int x)
+{
+	int i, r = 1;
+
+	for (i = 0; i < n; i++)
+	{
+		r *= x;
+	}
+
+	return (r);
 }

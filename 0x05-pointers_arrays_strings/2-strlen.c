@@ -1,19 +1,19 @@
-/**
- * _strlen - return string length
- * @s: string
- * Description: function that returns the length of a string.
- * Return: returns the number of bytes in the string
- */
+#include "main.h"
 
+/**
+ * _strlen - Returns the length of a string
+ * @s: Pointer to the string
+ *
+ * Return: Length of the string
+ */
 int _strlen(char *s)
 {
-	int i = 0, counter = 0;
+	int len = 0;
 
-	while (*(s + i) != '\0')
+	while (*(s + len) != '\0')
 	{
-		counter++;
-		i++;
+		len++;
 	}
 
-	return (counter);
+	return (len);
 }

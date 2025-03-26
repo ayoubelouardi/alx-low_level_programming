@@ -1,22 +1,17 @@
 #include "main.h"
 
 /**
- * puts2 - print string
- * @str: string
- * Description: function that prints a string,
- * followed by a new line, to stdout.
+ * puts2 - Prints every other character of a string starting with the first
+ * @str: Pointer to the string
  */
-
 void puts2(char *str)
 {
 	int i = 0;
-	char c;
 
-	for (i = 0; i <= (int)sizeof(str); i++)
+	while (*(str + i) != '\0')
 	{
-		c = *(str + i);
-		_putchar(c);
-		i++;
+		_putchar(*(str + i));
+		i+=2;
 	}
 	_putchar('\n');
 }
