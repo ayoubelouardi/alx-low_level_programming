@@ -2,16 +2,6 @@
 #include <stdio.h>
 
 /**
- * pow_f- power function
- * @n: power sign.
- * @x: number.
- *
- * Return: result.
- */
-
-long pow_f(int n, int x);
-
-/**
  * _atoi - Converts a string to an integer
  * @s: Pointer to the string
  *
@@ -54,6 +44,15 @@ int _atoi(char *s)
 
 	return (0);
 }
+
+/**
+ * pow_f - power function
+ * Description: calculate the power of a number
+ * @n: power sign.
+ * @x: number.
+ *
+ * Return: result.
+ */
 
 long pow_f(int n, int x)
 {
