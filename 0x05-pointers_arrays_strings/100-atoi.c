@@ -38,18 +38,16 @@ int _atoi(char *s)
 			{
 				n = *(s + i + j) - '0';
 				result = result * (j == 0 ? 0 : 10) + n;
+
 			}
+			if (sign % 2 != 0)
+				result = result * -1;
 			break;
 		}
 		else if (c == '-')
 		{
 			sign--;
 		}
-	}
-
-	if (sign % 2 != 0)
-	{
-		printf("-");
 	}
 
 	return (result);
