@@ -2,6 +2,17 @@
 #include <stdio.h>
 
 /**
+ * _isdigit - Checks if a character is a digit (0-9).
+ * @c: The character to check.
+ *
+ * Return: 1 if c is a digit, 0 otherwise.
+ */
+int _isdigit(char c)
+{
+	return (c >= '0' && c <= '9');
+}
+
+/**
  * _atoi - Converts a string to an integer
  * @s: Pointer to the string
  *
@@ -9,59 +20,37 @@
  */
 int _atoi(char *s)
 {
-	int i = 0, j = 0, p = 0;
-	long number = 0, n = 0;
+	int result = 0, i, j, sign = 0, n = 0;
 	char c;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; *(s + i) != '\0' ; i++)
 	{
 		c = *(s + i);
 
-		if (c == '-')
+		/* check for the number */
+		if (_isdigit(c))
 		{
-			p--;
-		}
-		else if (c == '+')
-		{
-			p++;
-		}
-		else if ('0' <= c && c >= '9')
-		{
-			/* calculate the number */
-			for (j = 0; (*(s + i + j) >= '0' && *(s + i + j) <= 'z'); j++)
+			/* enter a loop untile we are not in a number*/
+			/* capture the number */
+			/* edit result */
+			/* break out */
+			for (j = 0; _isdigit(*(s + i + j)); j++)
 			{
 				n = *(s + i + j) - '0';
-				number = number * pow_f(j, 10) + n;
+				result = result * (j == 0 ? 0 : 10) + n;
 			}
-
-			/* sign */
-			if (p < 0)
-				number = number * -1;
-
-			return (number);
+			break;
+		}
+		else if (c == '-')
+		{
+			sign--;
 		}
 	}
 
-	return (0);
-}
-
-/**
- * pow_f - power function
- * Description: calculate the power of a number
- * @n: power sign.
- * @x: number.
- *
- * Return: result.
- */
-
-long pow_f(int n, int x)
-{
-	int i, r = 1;
-
-	for (i = 0; i < n; i++)
+	if (sign % 2 != 0)
 	{
-		r *= x;
+		printf("-");
 	}
 
-	return (r);
+	return (result);
 }
